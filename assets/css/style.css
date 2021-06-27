@@ -699,23 +699,14 @@ section {
 /*--------------------------------------------------------------
 # Tech-Stack
 --------------------------------------------------------------*/
-/* .tech-stack .container .row {
-  --bs-gutter-x: 100px;
-} */
-
-.tech-stack .container .row > div {
-  padding: 20px 50px;
-  margin: 10px 0;
-}
-
-.box {
+.tech-stack .logo-box {
   background-color: #fff;
   border-radius: 5px;
   -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.box::after {
+.tech-stack .logo-box::after {
   content: "";
   border-radius: 5px;
   position: absolute;
@@ -730,12 +721,12 @@ section {
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.box:hover {
+.tech-stack .logo-box:hover {
   -webkit-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
 
-.box:hover::after {
+.tech-stack .logo-box:hover::after {
   opacity: 1;
 }
 

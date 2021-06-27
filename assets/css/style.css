@@ -708,15 +708,11 @@ section {
   margin: 10px 0;
 }
 
-/* .tech-stack .container .row > div:hover {
-  border: 1px solid black;
-} */
-
-/* .box {
+.box {
   background-color: #fff;
   border-radius: 5px;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .box::after {
@@ -730,8 +726,8 @@ section {
   height: 100%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   opacity: 0;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .box:hover {
@@ -741,9 +737,9 @@ section {
 
 .box:hover::after {
   opacity: 1;
-} */
+}
 
-.tech-logo {
+.tech-stack .tech-logo {
   width: fit-content;
   max-width: 100%;
   height: 20vh;

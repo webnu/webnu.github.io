@@ -699,9 +699,9 @@ section {
 /*--------------------------------------------------------------
 # Tech-Stack
 --------------------------------------------------------------*/
-.tech-stack .container .row {
-  /* --bs-gutter-x: 100px; */
-}
+/* .tech-stack .container .row {
+  --bs-gutter-x: 100px;
+} */
 
 .tech-stack .container .row > div {
   padding: 20px 50px;
@@ -712,7 +712,7 @@ section {
   border: 1px solid black;
 } */
 
-.box {
+/* .box {
   background-color: #fff;
   border-radius: 5px;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -741,7 +741,7 @@ section {
 
 .box:hover::after {
   opacity: 1;
-}
+} */
 
 .tech-stack .logo {
   width: fit-content;

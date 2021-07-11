@@ -8,7 +8,8 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Exo", sans-serif;
   color: var(--font-color);
 }
 
@@ -23,7 +24,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Exo", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -378,11 +380,12 @@ a.nav-link:hover {
 #hero h2 {
   color: #eee;
   margin: 15px 0 0 0;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Exo", sans-serif;
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 1px;
@@ -451,7 +454,7 @@ section {
   width: 50px;
   height: 3px;
   background: var(--background-color);
-  bottom: 0;
+  bottom: 10px;
   left: calc(50% - 25px);
 }
 
@@ -466,7 +469,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background-color: #fafafc;
+  background-color: #55555a;
   min-height: 40px;
   margin-top: 82px;
 }
@@ -522,38 +525,10 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
-.clients {
-  padding: 15px 0;
-  text-align: center;
-}
-
-.clients img {
-  max-width: 45%;
-  transition: all 0.4s ease-in-out;
-  display: inline-block;
-  padding: 15px 0;
-  filter: grayscale(100);
-}
-
-.clients img:hover {
-  filter: none;
-  transform: scale(1.15);
-}
-
-@media (max-width: 768px) {
-  .clients img {
-    max-width: 40%;
-  }
-}
-
-/*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about h3 {
   font-weight: 700;
-  font-size: 34px;
   color: #414c64;
 }
 
@@ -590,7 +565,8 @@ section {
 .counts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Exo", sans-serif;
   font-size: 14px;
 }
 
@@ -806,7 +782,7 @@ section {
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
-  background: #fafafc;
+  background: #f7f8fa;
   position: relative;
   border-radius: 6px;
   position: relative;
@@ -1160,7 +1136,8 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Exo", sans-serif;
   color: #777777;
 }
 

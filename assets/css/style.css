@@ -2,9 +2,12 @@
 # General
 --------------------------------------------------------------*/
 :root {
-  --background-color: #9d7c5e;
-  --background-hover-color: #d6b99e;
+  /* --background-color: #9d7c5e;
+  --background-hover-color: #d6b99e; */
+  --background-color: linear-gradient(45deg, #3d41da 0, #0088f7 100%);
+  --background-hover-color: linear-gradient(45deg, #3d41da 0, #0088f7 100%);
   --font-color: #444444;
+  --font-hover-color: linear-gradient(45deg, #3d41da 0, #0088f7 100%);
 }
 
 body {
@@ -14,7 +17,7 @@ body {
 }
 
 a {
-  color: var(--background-color);
+  color: var(--font-hover-color);
   text-decoration: none;
 }
 
@@ -144,6 +147,7 @@ a.nav-link {
   color: white;
   text-decoration: none;
   width: fit-content;
+  font-weight: bold;
 }
 
 a.nav-link::before {
@@ -172,7 +176,22 @@ a.nav-link:hover {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: var(--background-color);
+  /* color: var(--font-hover-color); */
+  /* background-color:; */
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #ece109, #db2458);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .navbar .dropdown ul {
@@ -208,7 +227,7 @@ a.nav-link:hover {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: var(--background-color);
+  color: var(--font-hover-color);
 }
 
 .navbar .dropdown:hover > ul {
@@ -330,7 +349,7 @@ a.nav-link:hover {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-  color: var(--background-color);
+  color: var(--font-hover-color);
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -343,7 +362,7 @@ a.nav-link:hover {
 #hero {
   width: 100%;
   height: 80vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/hero-banner.png") top center;
   background-size: cover;
   position: relative;
 }
@@ -384,7 +403,6 @@ a.nav-link:hover {
 }
 
 #hero .btn-get-started {
-  /* font-family: "Raleway", sans-serif; */
   font-family: "Exo", sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -394,9 +412,37 @@ a.nav-link:hover {
   border-radius: 50px;
   transition: 0.5s;
   margin-top: 40px;
-  border: 2px solid var(--background-color);
+  border: 3px solid #3a4ed5;
   color: #fff;
 }
+/* .btn-get-started::before {
+  background: linear-gradient(45deg, red, blue);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+} */
+
+/* .btn-get-started {
+  position: relative;
+  padding: 20px 30px;
+  margin: 5px;
+  display: inline-block;
+  font-size: 30px;
+}
+.btn-get-started::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  padding: 10px;
+  background: linear-gradient(45deg, red, blue);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+} */
 
 #hero .btn-get-started:hover {
   background: var(--background-color);
@@ -708,9 +754,12 @@ section {
 .tech-stack .logo-box:hover {
   -webkit-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
-  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
-  /* border: 1px solid var(--background-color); */
-  box-shadow: 0 0 5px #9aa0a6;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+  -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+  border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+  border-image-slice: 1;
   -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }

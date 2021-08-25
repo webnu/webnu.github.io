@@ -595,6 +595,10 @@ section {
   color: #848484;
 }
 
+.in-middle{
+align-self: center;
+}
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -791,12 +795,15 @@ section {
   }
 }
 
+.logo-box.p-2 {
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  min-height: 320px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
